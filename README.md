@@ -37,26 +37,9 @@ java -jar queryserving.jar localhost 9300 docker-cluster
 ```
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
 Do you have any file to load? Press Y for Yes or any other character for No
-Y
-Press enter after you input the path for the file to load :: 
-/Users/mayankthirani/Desktop/document.json
+N
 Press enter after you input the string to query for :: 
-MON
-Found 10 below suggestions for the query string
-testing_monthylrevenueinlower
-Sixth_Monthly_Revenue
-Nineth_Monthly_Revenue
-Fifth_Monthly_Revenue
-Twice_Monthly_Revenue
-Half_Monthly_Revenue
-Quarterly_Monthly_Revenue
-Eight_Monthly_Revenue
-Sub_Monthly_Revenue
-Forth_Monthly_Revenue
-Do you have more string to query for? Press Y for Yes or any other character for No
-Y
-Press enter after you input the string to query for :: 
-rev
+reven
 Found 10 below suggestions for the query string
 test test_revenueinlower
 Revenue
@@ -68,6 +51,32 @@ Fifth_Monthly_Revenue
 Twice_Monthly_Revenue
 SeventhMonthly_Revenue
 Half_Monthly_Revenue
+Do you have more string to query for? Press Y for Yes or any other character for No
+Y
+Press enter after you input the string to query for :: 
+yea
+Found 1 below suggestions for the query string
+Yearly_Revenue
+Do you have more string to query for? Press Y for Yes or any other character for No
+Y
+Press enter after you input the string to query for :: 
+ret
+No suggestions found for the string: ret
+Do you have more string to query for? Press Y for Yes or any other character for No
+Y
+Press enter after you input the string to query for :: 
+mon
+Found 10 below suggestions for the query string
+testing_monthylrevenueinlower
+Sixth_Monthly_Revenue
+Nineth_Monthly_Revenue
+Fifth_Monthly_Revenue
+Twice_Monthly_Revenue
+Half_Monthly_Revenue
+Quarterly_Monthly_Revenue
+Eight_Monthly_Revenue
+Sub_Monthly_Revenue
+Forth_Monthly_Revenue
 Do you have more string to query for? Press Y for Yes or any other character for No
 N
 ```
