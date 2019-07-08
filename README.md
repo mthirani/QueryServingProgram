@@ -1,6 +1,6 @@
 # QueryServingProgram
 
-### To start executing the QueryServing module, you need to follow the below pre-requisite:
+### Pre-requisites to start the program:
 
 1. Install Docker from the below link if you don't have (needed to run elastic search engine on it). https://docs.docker.com/v17.12/install/#supported-platforms
 2. Obtain the elastic search for docker: 
@@ -21,7 +21,9 @@ curl http://127.0.0.1:9200/_cat/health
 
 4. Note your port number, cluster name, hostname
 
-### If you followed the above steps, then your cluster name is *docker-cluster*, port number is *9300* and hostname is *localhost* which will be needed as an input to start the below JAR package.
+### Start Executing the QueryServingModule: 
+
+If you followed the above steps, then your cluster name is **docker-cluster**, port number is **9300** and hostname is **localhost** which will be needed as an input to start the below JAR package.
 
 JAR to download: https://drive.google.com/drive/folders/12jZZGBMIvcMXj2mrQC0xWXFoUMqPg20I?usp=sharing
 
@@ -31,7 +33,7 @@ Once you have the JAR, run the below command:
 java -jar queryserving.jar localhost 9300 docker-cluster
 ```
 
-#### It will prompt you for your inputs one by one and follow them to run the program. Below is the sample program execution:
+##### It will prompt you for your inputs one by one; Follow them to run the program. Below is the sample program execution result:
 ```
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
 Do you have any file to load? Press Y for Yes or any other character for No
@@ -70,7 +72,7 @@ Do you have more string to query for? Press Y for Yes or any other character for
 N
 ```
 
-#### The input file to load in elastic search is being taken as JSON file with a list of name, score pairs. Sample file which is being loaded:
+##### Important Note: The input file to load in elastic search is being taken as JSON file with a list of name, score pairs. Sample file which is being loaded:
 ```
 [
    {
